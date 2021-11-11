@@ -31,7 +31,7 @@ docker build <directory>
  ※Dockerfileのあるディレクトリに移動してから打ち込むことが基本だから「docker build .」の形で覚えるとよい
 ```
 
-##（注）RUNは書き方に気を付ける
+## （注）RUNは書き方に気を付ける
 - 各コマンドごとにレイヤーが作成されるため、まとめて実行するように記述すると良い
 - (例)RUN apt-get update && apt-get install -y \  
  　　curl \
