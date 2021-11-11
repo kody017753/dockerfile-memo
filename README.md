@@ -33,9 +33,12 @@ docker build <directory>
 
 ## （注）RUNは書き方に気を付ける
 - 各コマンドごとにレイヤーが作成されるため、まとめて実行するように記述すると良い
-- (例)RUN apt-get update && apt-get install -y \  
- 　　     curl \
-               cvs \
-               nginx 
+```text
+(例)
+RUN apt-get update && apt-get install -y \  
+curl \
+cvs \
+nginx
+```
 - 「&&」であぷで、インストールを同時にし「\」で複数のモジュールを入れたりできる
 - レイヤーが増えると見ずらかったり容量が増える原因に（まとめたほうが容量少ない）
