@@ -16,10 +16,10 @@ gedit DOckerfile
  FROM ubuntu:latest
  RUN touch test
  CMD ["/bin/bash"]
- 
+ ```
 ### FROM RUN CMDの違い
 
-* FROM・・・Docker imageのベースの指定（ubuntuやpythonなど）
+- FROM・・・Docker imageのベースの指定（ubuntuやpythonなど）
 
 - RUN・・・コマンドを実行（image layerを作成）
 
