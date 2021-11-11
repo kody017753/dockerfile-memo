@@ -24,3 +24,11 @@ gedit DOckerfile
 - RUN・・・コマンドを実行（image layerを作成）
 
 - CMD・・・docker imageのデフォルトのコマンドを指定（["/bin/bash"]が基本？　["ls"]にしたらdocker run時、ターミナルにリストが開いた
+
+## Dockerfileからdocker imageを作成する
+```ubuntu
+docker build <directory>
+ ※Dockerfileのあるディレクトリに移動してから打ち込むことが基本だから「docker build .」の形で覚えるとよい
+```
+
+
