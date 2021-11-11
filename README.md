@@ -1,11 +1,11 @@
 # docker fileの作成
 
 ## 「docker」フォルダを作成する
-```ubuntu
+```bash
 mkdir docker
 ```
 ## 「dockerフォルダの中にテキストエディタで「Dockerfile」を作成する
-```ubuntu
+```bash
 gedit DOckerfile
  ※テキストエディタはなんでもいい
  ```
@@ -26,7 +26,7 @@ gedit DOckerfile
 - CMD・・・docker imageのデフォルトのコマンドを指定（["/bin/bash"]が基本？　["ls"]にしたらdocker run時、ターミナルにリストが開いた
 
 ## Dockerfileからdocker imageを作成する
-```ubuntu
+```bash
 docker build <directory>
  ※Dockerfileのあるディレクトリに移動してから打ち込むことが基本だから「docker build .」の形で覚えるとよい
 ```
